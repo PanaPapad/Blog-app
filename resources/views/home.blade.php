@@ -1,11 +1,8 @@
-<!Doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
-</head>
-<body>
-    <div>Hello, Laravel!</div>
-</body>
-</html>
+@extends('layouts.public')
+@section('title', 'Home')
+@section('public-content')
+    <div class="container">
+        <h1>Welcome to the Blog</h1>
+        <p>This is the home page of the blog application.</p>
+    </div>
+@endsection
